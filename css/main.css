@@ -1,0 +1,91 @@
+:root {
+    font-size: 14px;
+    font-family: Segoe UI;
+}
+
+[clickable] {
+    padding: 1rem;
+    font-size: 1rem;
+    font-family: inherit;
+    border: none;
+}
+
+[current-tab] {
+    background: #f00;
+}
+
+body, tablist {
+    display: flex;
+}
+
+
+@media only screen and (max-width: 600px) {
+    tablist {
+	flex-direction: column;
+	max-height: 300px;
+	overflow-y: auto;
+    }
+}
+
+body, div {
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem;
+}
+
+h1 {
+    text-align: center;
+}
+
+.flag {
+    border: 1px solid #000;
+}
+
+a {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    text-align: center;
+    font-size: 1.5rem;
+    background: #999;
+    color: #fff;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+a:visited {
+    color: #fff;
+}
+
+form {
+    background: #999;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    box-shadow: .5rem .5rem .5rem #0003;
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    gap: .5rem;
+    user-select: none;
+}
+
+controls {
+    display: flex;
+    gap: .5rem;
+    justify-content: right;
+    margin-top: 2rem;
+}
+
+controls * {
+    padding: .2rem 1rem !important;
+    font-size: inherit;
+    font-family: inherit;
+    border: none;
+    border-radius: 2px;
+}
+
+.edit {
+    border: 1px solid #000;
+}
+
