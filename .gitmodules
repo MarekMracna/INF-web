@@ -1,0 +1,3 @@
+[submodule "el.js"]
+	path = el.js
+	url = git@github.com:MarekMracna/el.js.git
